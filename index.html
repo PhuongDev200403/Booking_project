@@ -49,8 +49,7 @@
                         EN
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
-                    <a type="button" data-bs-target="#large-modal" data-bs-toggle="modal"
-                        class="mb-2 mb-md-0 text-black">
+                    <a href="#large-modal" data-bs-target="#large-modal" data-bs-toggle="modal" class="mb-2 mb-md-0 text-black">
                         <i class="fa-solid fa-users"></i>
                     </a>
                 </div>
@@ -82,7 +81,59 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Show a second modal and hide this one with the button below.
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between">
+                            <a class=" small text-decoration-none text-black" href="">Forgot your passwword ?</a>
+                            <a class="small " href="#signup" data-bs-target="#signup" data-bs-toggle="modal">Đăng ký</a>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Remember your password</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3">Đăng nhập</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Đăng Ký</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password confirmation</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Remember your password</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3">Đăng Ký</button>
+                      </form>
                 </div>
             </div>
         </div>
