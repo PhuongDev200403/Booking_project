@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +8,86 @@
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.5.2-web/css/all.min.css">
     <title>Booking Hotel</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top align-items-center">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./asset/img/Logo NH Hotels & Resorts vertical - azul nh-primary - 18h.svg" alt="Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Hotels</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Offer & Inpiration</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#" >Professionals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#" >Loyalty</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Booking</a>
-              </li>
-            </ul>
-            <div class=" flex-column d-flex flex-md-row">
-                <a href="#" class="me-4 text-decoration-none mb-2 mb-md-0 text-black">
-                    <i class="fa-solid fa-question"></i>
-                </a>
-                <a href="#" class="me-4 text-decoration-none mb-2 mb-md-0 text-black">
-                    <i class="fa-solid fa-phone"></i>
-                </a>
-                <a href="#" class="me-4 text-decoration-none text-black mb-2 mb-md-0">
-                    EN
-                    <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <a href="#" class="mb-2 mb-md-0 text-black">
-                    <i class="fa-solid fa-users"></i>
-                </a>
+            <a class="navbar-brand" href="#">
+                <img src="./asset/img/Logo NH Hotels & Resorts vertical - azul nh-primary - 18h.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offer & Inpiration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Professionals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Loyalty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Booking</a>
+                    </li>
+                </ul>
+                <div class=" flex-column d-flex flex-md-row">
+                    <a href="#" class="me-4 text-decoration-none mb-2 mb-md-0 text-black">
+                        <i class="fa-solid fa-question"></i>
+                    </a>
+                    <a href="#" class="me-4 text-decoration-none mb-2 mb-md-0 text-black">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="#" class="me-4 text-decoration-none text-black mb-2 mb-md-0">
+                        EN
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <a type="button" data-bs-target="#large-modal" data-bs-toggle="modal"
+                        class="mb-2 mb-md-0 text-black">
+                        <i class="fa-solid fa-users"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="modal fade" id="large-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Nội dung modal ở đây.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+              <button type="button" class="btn btn-primary">Lưu</button>
             </div>
           </div>
         </div>
-    </nav>
+    </div> -->
+    <div class="modal fade" id="large-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Đăng nhập</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Show a second modal and hide this one with the button below.
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!--phần nội dung chính-->
     <section class="p-5 border-bottom">
@@ -59,10 +95,34 @@
 
         </div>
     </section>
-     <!--phần footer-->
+    <!--phần footer-->
     <footer class="bg-light py-5">
-   
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button> -->
+
+        <!-- Modal -->
+        <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
 </body>
 
 <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </html>
